@@ -1,0 +1,93 @@
+-- KingDoor's Gui --
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ArsenalHit = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local InfYeild = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local BallScript = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Name = "KingsGui"
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.239828527, 0, 0.338158607, 0)
+Main.Size = UDim2.new(0, 402, 0, 294)
+Main.ZIndex = -2
+Main.Active = true
+Main.Draggable = true
+
+UICorner.Parent = Main
+
+ArsenalHit.Name = "ArsenalHit"
+ArsenalHit.Parent = Main
+ArsenalHit.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ArsenalHit.Position = UDim2.new(0.0161814541, 0, 0.508737862, 0)
+ArsenalHit.Size = UDim2.new(0, 146, 0, 34)
+ArsenalHit.Font = Enum.Font.SourceSans
+ArsenalHit.Text = "ArsenalHit"
+ArsenalHit.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArsenalHit.TextScaled = true
+ArsenalHit.TextSize = 14.000
+ArsenalHit.TextWrapped = true
+ArsenalHit.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzytok/ArsenalSc/main/Arsenal", true))()
+end)
+
+UICorner_2.Parent = ArsenalHit
+
+InfYeild.Name = "Inf Yeild"
+InfYeild.Parent = Main
+InfYeild.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+InfYeild.Position = UDim2.new(0.0161814541, 0, 0.369907022, 0)
+InfYeild.Size = UDim2.new(0, 146, 0, 34)
+InfYeild.Font = Enum.Font.SourceSans
+InfYeild.Text = "Inf Yeild"
+InfYeild.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfYeild.TextScaled = true
+InfYeild.TextSize = 14.000
+InfYeild.TextWrapped = true
+InfYeild.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_3.Parent = InfYeild
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Title.Position = UDim2.new(0.016181469, 0, 0.0488690138, 0)
+Title.Size = UDim2.new(0, 388, 0, 47)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "King's Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_4.Parent = Title
+
+BallScript.Name = "Ball Script"
+BallScript.Parent = Main
+BallScript.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+BallScript.Position = UDim2.new(0.0161814541, 0, 0.231076181, 0)
+BallScript.Size = UDim2.new(0, 146, 0, 34)
+BallScript.Font = Enum.Font.SourceSans
+BallScript.Text = "Ball Script"
+BallScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+BallScript.TextScaled = true
+BallScript.TextSize = 14.000
+BallScript.TextWrapped = true
+BallScript.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzytok/Ball/main/Ball", true))()
+end)
+
+UICorner_5.Parent = BallScript
